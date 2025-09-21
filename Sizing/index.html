@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        /*html is the root element of the page*/
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box; /* makes width include padding and border */
+            border: 1px solid black;
+            /* width: 2048px; */
+            width: 80vw; /* 100% of viewport width, this widht is according to size of screen */
+            height: 10vh;
+            margin: auto; /* to center the box, only applicable in block element not inline element*/
+            background-color: lightblue;
+            font-size: 2rem; /* 1rem = root element font size that is 12px, so 2rem = 24px */
+        }
+
+        .container{
+             box-sizing: border-box; /* makes width include padding and border */
+            border: 1px solid black;
+            /* width: 2048px; */
+            width: 80vw; /* 100% of viewport width, this widht is according to size of screen */
+            margin: 23px auto; /* to center the box, only applicable in block element not inline element, 23 is top bottom and auto is left and right*/
+            /* height: 80vh; */
+            min-height: 80vh;   /* minimum height of container */
+            font-size: 16px; /* 1em = current font size */
+            background-color: lightblue;
+        }
+
+        .container > div{
+            border: 2px solid red;
+            font-size: 1.5em; /* 1.5 times of current font size that is 16px, so 24px */ 
+            width: 50%; /* 50% of "parent" element width that is container width */
+        }
+
+        .container > div > div{
+            border: 2px solid green;
+            font-size: 0.5em; /* 0.5 times of current font size that is 24px, so 12px */ 
+            width: 70%; /* 70% of "parent" element width that is div width */
+        }
+
+        .mycont{
+            box-sizing: border-box; /* makes width include padding and border */
+            border: 1px solid black;
+            margin: 23px auto; /* to center the box, only applicable in block element not inline element*/
+            color: black;
+            font-size: 22px;
+            /* width: 100vmin; 100% of minimum of height and width of viewport */
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> this is a box</div>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta velit voluptates ex itaque autem fuga. Exercitationem, quisquam dolore! Totam ipsum cum iure distinctio blanditiis at placeat officiis praesentium assumenda? Quasi ipsa animi, a aliquam cupiditate molestias fuga aperiam corrupti quia deserunt similique, dolores maiores sequi perspiciatis dignissimos voluptate eaque magni vel velit!
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem enim recusandae quisquam laborum nostrum, placeat molestiae unde asperiores possimus atque delectus excepturi!
+            </div>
+        </div>
+
+        <!-- lorem999 -->
+    </div>
+    <div class="mycont">This is a container</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+            transition-property: all; /*or you can wirte comma separated like background-color , trasform */
+            transition-duration: 3s; /*animation kita tym tk chlega*/
+            transition-timing-function: ease-in-out ;
+            transition-delay:1s ; /*animation kitni der baad chlega*/
+
+            /* transition: all 3s ease-in-out 1s; all in one */
+        }
+
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+</html>

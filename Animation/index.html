@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(0, 91, 89);
+            width: 30vw;
+            height: 80vh;
+        }
+
+        .box{
+            background-color: aqua;
+            width: 34px;
+            height: 45px;
+            /* animation: aniketKaAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-delay: 1s; */
+            /* animation-direction: alternate; */
+            /* animation-play-state: paused; */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: aniketKaAnimation 3s ease-in-out 2s 1 forwards,
+                        aniket2 3s ease-in-out 2s 1;
+        }
+
+        @keyframes aniketKaAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes aniket2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(230deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+</body>
+</html>

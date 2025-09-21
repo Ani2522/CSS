@@ -1,0 +1,76 @@
+<!-- Position Property is static by default-->
+ <!-- static means top bottom, left right porperty doesnt work-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 133px;
+            width:80vw;
+            padding: 3px;
+            margin:3px;
+            border:2px solid black;
+        }
+        /* NOTE : transform, filter or perspective properties can also make an element appear as positioned */
+        .box1{
+            background-color: lightblue;
+            /* position: relative; */
+            /* z-index: 1; /* it will be on top of other boxes which have less z-index value 
+            position: absolute; /* it will be positioned according to the nearest positioned ancestor, if there is no positioned ancestor then it will be positioned according to the initial containing block that is html element 
+            top: 34px; /* it will move 34px down from the top of the page 
+            left: 67px; it will move 67px right from the left of the page */
+
+            position: sticky; /* it will be positioned according to the viewport when we scroll the page, it will stick to the top of the viewport when we scroll down */
+            top:0px;
+        }
+
+        .box2{
+            background-color: lightgreen;
+            /* position: relative; it will be positioned according to its normal position, now top bottom left right property will work */
+            /* top: -48px; /* it will move 48px up from its normal position 
+            left: 30px; it will move 30px right from its normal position */
+
+            /* top:0px;
+            left: 56px; */
+        }
+
+        .box3{
+            background-color: lightgrey;
+            /* position: fixed; /* it will be positioned according to the viewport, it will not move when we scroll the page 
+            bottom:0px;
+            left:8vw;
+            height: 400px; */
+        }
+
+        .box4{
+            background-color: lightcoral;
+        }
+
+        .partent{
+            position: absolute;
+            padding: 43px;
+            margin:34px;
+            border: 2px solid red;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="partent">
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    
+</body>
+</html>

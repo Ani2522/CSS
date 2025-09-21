@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* CSS Variables are used to store values that can be reused throughout the stylesheet. They help maintain consistency and make it easier to update styles. */
+        /* CSS Variables can be string, number, color, etc. */
+
+        /* Global variables are defined using the :root pseudo-class, which represents the highest-level parent in the document. */
+        :root{
+            --color:blue;
+            --seccolor:lightgrey;
+            --defpad:23px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /* background-color: rgb(148, 230, 148); */
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding:var(--defpad);
+            border: 5px solid var(--seccolor);
+        }
+
+        ul li:first-child{
+            --color:rgb(255, 128, 0);
+            background-color: var(--color);
+            
+        }
+
+        .container{
+            /* background-color: rgb(161, 209, 87); */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, veritatis, officia vel odit consequatur vero, quia ipsum possimus dolorem cum architecto? Ab distinctio, voluptates commodi reprehenderit totam beatae accusamus quas laborum enim cupiditate. Optio natus deleniti maxime? Ut porro sequi eius debitis commodi odio temporibus?
+    </div>
+</body>
+</html>

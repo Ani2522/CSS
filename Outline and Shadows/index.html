@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:2px solid black;
+            padding: 23px;
+            box-shadow: 5px 15px 5px grey; /* horizontal vertical blur-radius color */
+        }
+        .text-shadow{
+            text-shadow: 2px 2px 4px red; /* horizontal vertical blur-radius color */
+            border: 2px solid red;
+            border-radius: 4px;
+            outline: 2px solid blue; /* outline does not take space, it is drawn above the element */
+            outline-offset: 50px; /* space between element and outline */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">I am a box</div>
+    <p class="text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, placeat distinctio ut iste quae corporis cumque iusto saepe perferendis fuga laboriosam voluptatem eaque.
+    </p>
+</body>
+</html>

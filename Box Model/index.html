@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css BOX Model</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px; /* space inside the box */
+            margin: 35px; /* space outside the box */
+            border: 2px solid red; /* border thickness and color */
+            height: 200px; /* height of the box *, actual height = content height + top and bottom padding + top and bottom border + top and bottom margin */
+            box-sizing: border-box; /* to include content,padding and border not margin** in height and width -> this reduces size that is 200px goes to 176.8*/
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 25px; /*here margin have collapsed, it says that margin will not be added twice, it will take the max of two margins */
+            border: 2px solid green;
+            height: 200px;
+            box-sizing: content-box;
+            ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Float and Clear</title>
+    <style>
+        .cards{
+            border:2px solid black;
+            display: flow-root; /* creates a new block formatting context */
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            float: left; /* makes image float to left and text wraps around it */
+        }
+
+        .card:nth-child(3){
+            /* clear: left; it will move below the image */
+            /* clear: right; it will not move below the image as image is on left */
+            clear: both; /* it will move below the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781974739011/the-art-of-demon-slayer-kimetsu-no-yaiba-the-anime-9781974739011_hr.jpg" alt="" width="300px">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, excepturi ut modi voluptatem officia voluptates temporibus odio dignissimos id iure maxime illum veritatis blanditiis vitae adipisci porro reiciendis earum, eum libero tempore autem enim!</div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quaerat asperiores nam fuga aspernatur! Reprehenderit dolore dicta sint ea accusantium? Eligendi laboriosam, quod quia veniam minus doloribus asperiores voluptas sunt reiciendis neque suscipit quibusdam fugit, unde velit sapiente ullam tempora esse doloremque alias accusamus quidem! Neque dignissimos harum suscipit est eaque soluta sapiente consequuntur, possimus molestiae sint! Maiores ipsum deserunt ab suscipit quod dolores nisi repellendus repudiandae nobis soluta. Labore laboriosam animi possimus, numquam maiores enim necessitatibus mollitia officia et ratione quae, culpa vitae commodi quam laudantium corporis nemo voluptas nobis aliquam vero sed cupiditate consequatur? Et vitae obcaecati voluptatem necessitatibus voluptatum aspernatur nemo porro, deleniti hic delectus cupiditate aut quis, repellat eligendi! Molestiae officiis eligendi voluptate. Quod harum, doloremque necessitatibus, rerum deserunt esse odio natus dicta, voluptate pariatur iusto ipsum? Odio necessitatibus corrupti suscipit, pariatur atque accusantium recusandae ducimus perferendis quos eveniet praesentium exercitationem. Suscipit quas reiciendis repudiandae dolor dolores aliquam eius optio minus odit harum recusandae blanditiis vel temporibus, corrupti placeat vero! Molestiae quas cum eligendi in. Alias, pariatur. Deleniti harum quasi et quo eos incidunt blanditiis, dolorum doloribus fugit beatae nostrum aperiam commodi. Expedita beatae necessitatibus temporibus quae enim, eos reprehenderit officia nihil. Velit ipsam reprehenderit eaque, provident fugiat quam nisi saepe totam, harum ipsa deserunt itaque soluta consequatur rerum omnis a nulla aut iusto enim perferendis commodi non aspernatur beatae? Amet deleniti nam iusto reprehenderit adipisci, dolores cupiditate neque commodi perferendis, ratione saepe accusantium, a expedita possimus quisquam quam impedit repellat architecto consequuntur quos placeat iure! Debitis quos, maiores ipsam corporis veritatis voluptatem minus inventore ea laudantium explicabo molestiae similique quidem ducimus asperiores aut voluptatum, ut odio dolorum eos! Atque tempora, ratione expedita nostrum repellendus quod labore facilis dolorum temporibus dicta illo placeat, maxime dignissimos est commodi iste magnam aperiam vero, reiciendis consectetur? Quae fugiat dolores veniam eius iusto veritatis itaque sapiente tempora deleniti perferendis, quos rem harum ipsum atque exercitationem excepturi blanditiis, soluta accusamus voluptatem, adipisci commodi odit! Maxime deleniti quam ipsum aspernatur, fuga iure consequatur voluptas quia!</div>
+        <div class="card">Card 3</div>
+    </div>
+    
+</body>
+</html>
